@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        h3{
+            color: peru;
+        }
+
+        h3:hover{
+            color: tomato;
+            background-color: skyblue;
+        }
+
+        input:focus {
+            color: blue;
+            /* padding-left: 20px; */
+            outline: 0;
+            border: 1px solid purple;
+        }
+
+        a:visited{
+            color: gray;
+        }
+
+        /* li:last-child {
+            color: red;
+        } */
+
+        /* li:first-child {
+            background-color: aqua;
+        } */
+
+        li:nth-child(2n) {
+            color: purple;
+        }
+
+        li:nth-child(2n+1) {
+            color: yellow;
+        }
+
+        li:nth-child(3n+1) {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h3>My Heading</h3>
+    <input type="text">
+    <input type="text">
+    <input type="text"><br>
+    <a href="https://google.com/">Google</a>
+    <a href="https://www.bbc.com/news/world-africa-13861843">mada</a>
+
+
+    <ul>
+        <li>Alia</li>
+        <li>Dalia</li>
+        <li>balia</li>
+        <li>Kalia</li>
+        <li>Malia</li>
+        <li>Plaiya</li>
+        <li>Jalaiy</li>
+        <li>Alia</li>
+        <li>Dalia</li>
+        <li>balia</li>
+        <li>Kalia</li>
+        <li>Malia</li>
+        <li>Plaiya</li>
+        <li>Jalaiy</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: 
+            "header   header   header   header"
+            "nav     main   main    sidebar"
+            "nav    main    main    advertise"
+            "footer footer  footer  footer"
+            ;
+            gap: 20px;
+        }
+        .header,
+        .nav,
+        .main,
+        .sidebar,
+        .advertise,
+        .footer {
+            background-color: bisque;
+            border: 2px solid tomato;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .header {
+            grid-area: header;
+        }
+        .nav {
+            grid-area: nav;
+        }
+        .main {
+            grid-area: main;
+        }
+        .sidebar {
+            grid-area: sidebar;
+        }
+        .advertise {
+            grid-area: advertise;
+        }
+        .footer {
+            grid-area: footer;
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                display: grid;
+                grid-template-areas: 
+                    "header"
+                    "nav"
+                    "main"
+                    "sidebar"
+                    "advertise"
+                    "footer"
+                ;
+            }
+        }
+    </style>
+</head>
+<body class="container">
+    <header class="header">
+        <h3>The Header</h3>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="">nav-1</a></li>
+            <li><a href="">nav-2</a></li>
+            <li><a href="">nav-3</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <article>
+            <h3>Main Article 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod pariatur doloribus nihil deleniti soluta debitis voluptate nisi numquam omnis tempora.</p>
+        </article>
+        <article>
+            <h3>Main Article 2</h3>
+            <p>Quo alias, amet ea ipsa hic inventore temporibus vero obcaecati illum quam quas? Minus consequuntur perspiciatis tempore enim est voluptatum!</p>
+        </article>
+    </main>
+    <aside>
+        <div class="sidebar">
+            <h4>Sidebar</h4>
+        </div>
+
+        <div class="advertise">
+            <h4>Advertise</h4>
+        </div>
+    </aside>
+    <footer class="footer">
+        <h3>The Footer</h3>
+    </footer>
+</body>
+</html>
